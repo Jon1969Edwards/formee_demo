@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+	<script src="https://unpkg.com/formee"></script>
+
+		<form id="form" action="#">
+			<div class="input">
+				<label for="name">Name <small>(optional)</small></label>
+				<input id="name" name="name" type="text" />
+			</div>
+
+			<div class="input">
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password" />
+			</div>
+
+			<div class="input">
+				<label for="confirm">Confirm Password</label>
+				<input id="confirm" name="confirm" type="password" />
+			</div>
+
+			<div class="input">
+				<label for="email">Email Address</label>
+				<input id="email" name="email" type="email" />
+			</div>
+
+			<div class="input">
+				<label for="referers">How did you hear about us?</label>
+				<select id="referers" name="referers">
+					<option value>--</option>
+					<option value="Facebook">Facebook</option>
+					<option value="Twitter">Twitter</option>
+					<option value="Google">Google</option>
+					<option value="Bing">Bing</option>
+					<option value="Friends">Friends</option>
+				</select>
+			</div>
+
+			<div class="input">
+				<label>What are your favorite movies?</label>
+				<ul>
+					<li>
+						<input id="m1" type="checkbox" name="movies" value="Space Jam" />
+						<label for="m1">Space Jam</label>
+					</li>
+					<li>
+						<input id="m2" type="checkbox" name="movies" value="Home Alone" />
+						<label for="m2">Home Alone</label>
+					</li>
+					<li>
+						<input id="m3" type="checkbox" name="movies" value="Frozen" />
+						<label for="m3">Frozen</label>
+					</li>
+					<li>
+						<input id="m4" type="checkbox" name="movies" value="Home Alone" />
+						<label for="m4">Home Alone</label>
+					</li>
+				</ul>
+			</div>
+
+			<button id="validate" type="button">Validate</button>
+			<button id="submit" type="submit">Submit</button>
+			<button id="clear" type="button">Reset</button>
+		</form>
+
+		<hr />
+
+		<pre><code id="output">// serialized data goes here</code></pre>
+	</body>
+  
+</html>
